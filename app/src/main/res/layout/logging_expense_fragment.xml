@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsoap.sat.fragments.logging.LoggingExpenseFragment"
+    android:background="@color/white_pressed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:id="@id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:weightSum="1">
+
+
+                    <Button
+                        android:id="@+id/select_date_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/ic_event_black_24dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/select_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:hint="@string/select_date"
+                        android:maxLines="1"
+                        android:layout_marginBottom="2dp"
+                        android:shadowColor="@color/primaryColor"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryColorDark"
+                        android:textColorHint="@color/decoratorColor"
+                        android:textSize="14sp"
+                        android:theme="@style/MyEditTextTheme" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_credit_card_black_24dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/expense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/expenseCategory"
+                        android:maxLines="1"
+                        android:numeric="decimal"
+                        android:shadowColor="@color/primaryColor"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryColorDark"
+                        android:textColorHint="@color/decoratorColor"
+                        android:textSize="14sp"
+                        android:theme="@style/MyEditTextTheme" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_view_headline_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:hint="@string/description"
+                        android:maxLines="1"
+                        android:shadowColor="@color/primaryColor"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryColorDark"
+                        android:textColorHint="@color/decoratorColor"
+                        android:textSize="14sp"
+                        android:theme="@style/MyEditTextTheme" />
+
+
+                </LinearLayout>
+
+
+
+                <Spinner
+                    android:id="@+id/expense_type"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/background"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_camera_black_24dp" />
+
+                    <Button
+                        android:id="@+id/attachment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:gravity="left|center"
+                        style="?android:borderlessButtonStyle"
+                        android:text="@string/Attachment"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/attachment_viewer"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@drawable/white_card"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/log_expense_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                style="?android:borderlessButtonStyle"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

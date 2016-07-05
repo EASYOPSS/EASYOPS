@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/color_code"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp">
+        <TextView
+            android:id="@+id/overview_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@android:color/background_dark"
+            android:text="South Ex - C4,Janakpuri"
+            android:textAllCaps="true"
+            />
+
+            <TextView
+                android:id="@+id/overview_category_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:layout_marginBottom="1dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="South Ex - C4,Janakpuri"
+                android:textAllCaps="true"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

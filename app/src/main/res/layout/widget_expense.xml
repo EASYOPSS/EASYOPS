@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    tools:context="com.tsoap.sat.septre.ExpenseAnalysisFragment"
+    android:background="@drawable/expense_card">
+
+    <LinearLayout
+        android:id="@+id/expense_widget_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Expense Summary"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:gravity="left|center_vertical"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/red200"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expense_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traffic Rules Violations"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/trafficrules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 1500"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuel Expense"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/fuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 1200"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Maintainance "
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/servicing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 2800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Expenses"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 2800"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other Expenses"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/otherexpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 800"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

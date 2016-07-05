@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="navigation_drawables">
+        <item name="account"> R.drawable.ic_account_balance_black_24dp</item>
+        <item name="route">R.drawable.ic_action_icon_maps_route_03</item>
+        <item name="expenseCategory">R.drawable.ic_trending_down_black_24dp</item>
+        <item name="category">R.drawable.ic_label_black_24dp</item>
+        <item name="face">R.drawable.ic_face_black_24dp</item>
+        <item name="todolist">R.drawable.ic_format_list_bulleted_black_24dp</item>
+        <item name="chart">R.drawable.ic_insert_chart_black_24dp</item>
+        <item name="overview">R.drawable.ic_event_note_black_24dp</item>
+        <item name ="calendar">R.drawable.ic_event_black_24dp</item>
+        <item name ="summary">R.drawable.ic_view_headline_black_24dp</item>
+        <item name ="face">R.drawable.ic_face_black_24dp</item>
+        <item name = "payment">R.drawable.ic_credit_card_black_24dp</item>
+        <item name="setting">R.drawable.ic_settings_applications_black_24dp</item>
+        <item name ="contact_us">R.drawable.ic_phone_black_24dp</item>
+    </array>
+
+
+    <array name="navigation_string">
+        <item name="AddAccounts">ADD ACCOUNTS</item>
+        <item name="RoutesDetails">ROUTES DETAILS</item>
+        <item name="ExpenseDetails">EXPENSE DETAILS</item>
+        <item name="Category">CATEGORIES</item>
+        <item name="Blank">BLANK</item>
+        <item name="todotasklist">TO DO TASK LIST</item>
+        <item name="charts">CHARTS</item>
+        <item name="Overview">OVERVIEW</item>
+        <item name="Blank">BLANK</item>
+        <item name="payments">PAYMENTS</item>
+        <item name="settings">SETTINGS</item>
+        <item name="contact_us">CONTACT US</item>
+    </array>
+
+    <array name="language">
+        <item name="english">ENGLISH</item>
+        <item name ="hindi">हिंदी</item>
+        <item name ="marathi">मराठी</item>
+    </array>
+
+    <array name="worktype">
+        <item name="corporate_routes">Corporate Routes</item>
+        <item name ="point_to_point">Point To Point</item>
+        <item name ="package_trip">Package Trip</item>
+    </array>
+
+    <array name="oragnisationType">
+        <item name="Corporate">Corporate Firm</item>
+        <item name ="vendor">Transport Vendor</item>
+        <item name ="aggregator">Aggregators</item>
+    </array>
+
+    <array name="incomeStatus">
+        <item name="pending">PENDING</item>
+        <item name ="paid">PAID</item>
+    </array>
+
+    <array name="colorCodeList">
+        <item name="deepOrange700">deepOrange700</item>
+        <item name ="deeporange200">deeporange200</item>
+        <item name ="orange700">orange700</item>
+        <item name="orange200">orange200</item>
+        <item name ="red900">red900</item>
+        <item name ="red500">red500</item>
+        <item name="red300">red300</item>
+        <item name ="yellow700">yellow700</item>
+        <item name ="yellow200">yellow200</item>
+        <item name="blue700">blue700</item>
+        <item name ="blue200">blue200</item>
+        <item name ="indigo700">indigo700</item>
+        <item name="indigo200">indigo200</item>
+        <item name ="bluegrey700">bluegrey700</item>
+        <item name ="bluegrey200">bluegrey200</item>
+        <item name="pink700">pink700</item>
+        <item name ="pink200">pink200</item>
+        <item name="green700">green700</item>
+        <item name ="green200">green200</item>
+    </array>
+
+</resources>

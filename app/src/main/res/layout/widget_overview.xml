@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    tools:context="com.tsoap.sat.septre.EarningsWidgetFragment"
+    android:background="@drawable/hotzones_card">
+
+
+
+    <LinearLayout
+        android:id="@+id/overview_widget_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="OVERVIEW"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:gravity="left|center_vertical"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/earning_title"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#D1C4E9"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/earnings_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/earning_title"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Net Revenue"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/revenue_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 8000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Earnings"
+                android:layout_marginTop="16dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/income_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 20000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Expenses"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/expense_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 12000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Routes"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/route_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Distance"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/white_pressed"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/distance_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="500 Km"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

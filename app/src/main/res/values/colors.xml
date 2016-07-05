@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="decoratorColor">#424242</color>
+    <color name="primaryColor">#F57C00</color>
+    <color name="primaryColorDark">#EF6C00</color>
+    <color name="accentColor">#805677fc</color>
+
+    <!-- Added widget theme Colors  -->
+    <color name="route_status_bar_theme">#1976D2</color>
+    <color name="route_theme">#2196F3</color>
+
+    <color name="expense_status_bar_theme">#D32F2F</color>
+    <color name="expense_theme">#F44336</color>
+
+    <color name="efficiency_status_bar_theme">#C2185B</color>
+    <color name="efficiency_theme">#E91E63</color>
+
+    <color name="task_status_bar_theme">#303F9F</color>
+    <color name="task_theme">#3F51B5</color>
+
+    <color name="fab_dashboard_primary">#E91E63</color>
+    <color name="fab_dashboard_primary_pressed">#C2185B</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="white_bright">#00ffffff</color>
+
+
+
+    <!-- Color code list -->
+
+    <color name="deepOrange700">#E64A19</color>
+    <color name ="deeporange200">#FFAB91</color>
+    <color name ="orange700">#FB8C00</color>
+    <color name="orange200">#FFCC80</color>
+    <color name ="red900">#B71C1C</color>
+    <color name ="red500">#F44336</color>
+    <color name="red200">#EF9A9A</color>
+    <color name ="yellow700">#FFD600</color>
+    <color name ="yellow200">#FFFF00</color>
+    <color name="blue700">#2962FF</color>
+    <color name ="blue200">#448AFF</color>
+    <color name ="indigo700">#303F9F</color>
+    <color name="indigo200">#536DFE</color>
+    <color name ="bluegrey700">#455A64</color>
+    <color name ="bluegrey200">#B0BEC5</color>
+    <color name="pink700">#C2185B</color>
+    <color name ="pink200">#FF4081</color>
+    <color name="green700">#388E3C</color>
+    <color name ="green200">#69F0AE</color>
+
+
+</resources>

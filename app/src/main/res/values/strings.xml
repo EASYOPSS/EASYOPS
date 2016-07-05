@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">EASYOPS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">LOGIN</string>
+    <string name="register_new">REGISTER</string>
+    <string name="register_me">REGISTER ME</string>
+    <string name="prompt_vehicleNumber">VEHICLE NUMBER</string>
+    <string name="prompt_phoneNumber">PHONE NUMBER</string>
+    <string name="prompt_userName">USER NAME</string>
+    <string name="welcome_note2">MANAGE IN MINUTES</string>
+    <string name="welcome_note1"><![CDATA[ACCOUNTS & ANALYTICS]]></string>
+    <string name="title_activity_branding_screen">EasyOps</string>
+    <string name="error_field_required">REQUIRED FIELD</string>
+    <string name="error_invalid_phonenumber">INVALID PHONE NUMBER</string>
+    <string name="sync_data">SYNC DATA</string>
+    <string name="notes_and_tasks">TASKS</string>
+    <string name="upload_documents">UPLOAD DOCUMENTS</string>
+    <string name="payments">PAYMENTS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="APP_API_KEY">978f629923035cb4f14d088fece538a247dcea7514afa93934d2204649dee1bc</string>
+    <string name="APP_SECRET_KEY">4e4333874afa937ffef2e7b2bd0d19f63281e94c0122bedbd1077964c9230bf4</string>
+    <string name="expenseCategory">EXPENSE</string>
+    <string name="Route">ROUTE</string>
+    <string name="todotasklist">TO DO TASK LIST</string>
+    <string name="AddAccounts">ADD ACCOUNTS</string>
+    <string name="Category">CATEGORIES</string>
+    <string name="RoutesDetails">ROUTES DETAILS</string>
+    <string name="ExpenseDetails">EXPENSE DETAILS</string>
+    <string name="Blank">BLANK</string>
+    <string name="charts">CHARTS</string>
+    <string name="Overview">OVERVIEW</string>
+    <string name="Calendar">CALENDAR</string>
+    <string name="Summary">SUMMARY</string>
+    <string name="efficiency">EFFICIENCY</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="previewData">Preview</string>
+    <string name="add_more_routes">Add Route</string>
+    <string name="start_point">STARTING POINT</string>
+    <string name="destination_point">DESTINATION</string>
+    <string name="earnings_of_route">EARNING</string>
+    <string name="earnings">EARNING</string>
+    <string name="tollExpense">TOLL</string>
+    <string name="traffic_rule_fines">TRAFFIC FINES</string>
+    <string name="other_panelty">LATE FINES</string>
+    <string name="add_more_expense">ADD EXPENSE</string>
+    <string name="Attachment">ATTACH DOCUMENT</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="speedometer">METER READING</string>
+    <string name="work_hours">WORK HOURS</string>
+    <string name="click_speedometer">click speedometer image</string>
+
+    <string name="title_activity_logging">New</string>
+    <string name="account_type">ACCOUNT TYPE</string>
+    <string name="earnings_details">INCOME DETAIL</string>
+    <string name="submit">Submit</string>
+    <string name="account_name">ACCOUNT NAME</string>
+    <string name="work_type">WORK TYPE</string>
+    <string name="organisation_type">ORGANISATION TYPE</string>
+    <string name="addExpenseCategory">ADD EXPENSE CATEGORY</string>
+    <string name="not_logged">NOT LOGGED</string>
+    <string name="income_status">INCOME STATUS</string>
+
+    <string name="title_activity_preview">Preview</string>
+    <string name="inr">₹</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_detail_screen">DetailScreen</string>
+    <string name="expensive_routes">EXPENSIVE ROUTES</string>
+    <string name="income">INCOME</string>
+    <string name="noofroutes">NO OF ROUTES</string>
+    <string name="distance">DISTANCE</string>
+    <string name="select_date">SELECT DATE</string>
+
+</resources>

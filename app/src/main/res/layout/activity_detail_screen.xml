@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsoap.sat.easyops.DetailScreen">
+
+   <include android:id="@+id/app_bar" layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:id="@+id/month_navigation"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/primaryColor"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/month_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="November"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/rightBtn"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/month_navigation"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/list_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.tsoap.sat.fragments.List.BaseListFragment"/>
+    </FrameLayout>
+
+</RelativeLayout>

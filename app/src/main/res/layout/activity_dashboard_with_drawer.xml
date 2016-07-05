@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_pressed"
+    tools:context="com.tsoap.sat.septre.Dashboard">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/app_bar"
+                    layout="@layout/app_bar" />
+
+                <ScrollView
+                    android:id="@+id/dashboard_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/app_bar"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+
+                                <fragment
+                                    android:id="@+id/earnings_fragment"
+                                    class="com.tsoap.sat.fragments.dashboard.OverviewWidgetFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:layout="@layout/widget_overview" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <fragment
+                                    android:id="@+id/routes_fragment"
+                                    class="com.tsoap.sat.fragments.dashboard.VehicleServicingWidget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:layout="@layout/widget_vehicle_servicing" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <fragment
+                                    android:id="@+id/efficiency_summary"
+                                    class="com.tsoap.sat.fragments.dashboard.ExpensiveRouteWidgets"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:layout="@layout/widgets_expensive_route" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+
+                                <fragment
+                                    android:id="@+id/expense_summary"
+                                    class="com.tsoap.sat.fragments.dashboard.ExpenseWidgetFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:layout="@layout/widget_expense" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <fragment
+                                    android:id="@+id/health_summary"
+                                    class="com.tsoap.sat.fragments.dashboard.HotRoutesWidget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:layout="@layout/widgets_hot_zones" />
+                            </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+                <com.getbase.floatingactionbutton.FloatingActionsMenu
+                    android:id="@+id/multiple_actions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    app:fab_addButtonColorNormal="@color/primaryColor"
+                    app:fab_addButtonColorPressed="@color/primaryColorDark"
+                    app:fab_addButtonPlusIconColor="@color/white"
+                    app:fab_labelStyle="@style/menu_labels_style">
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/action_Task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="@color/task_theme"
+                        app:fab_colorPressed="@color/expense_theme"
+                        app:fab_icon="@drawable/ic_format_list_bulleted_white_24dp"
+                        app:fab_size="mini"
+                        app:fab_title="@string/todotasklist" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/action_Efficiency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="@color/fab_dashboard_primary"
+                        app:fab_colorPressed="@color/fab_dashboard_primary_pressed"
+                        app:fab_icon="@drawable/ic_rpm"
+                        app:fab_size="mini"
+                        app:fab_title="@string/efficiency" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/action_Expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="@color/expense_theme"
+                        app:fab_colorPressed="@color/expense_status_bar_theme"
+                        app:fab_icon="@drawable/ic_action_expense"
+                        app:fab_size="mini"
+                        app:fab_title="@string/expenseCategory" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/action_Route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="@color/route_theme"
+
+                        app:fab_colorPressed="@color/route_status_bar_theme"
+                        app:fab_icon="@drawable/ic_action_icon_maps_route"
+                        app:fab_size="mini"
+                        app:fab_title="@string/Route" />
+
+
+                </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/drawerNavigationFragment"
+            class="com.tsoap.sat.fragments.dashboard.NavigationDrawerFragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/navigation_drawer_fragment"
+            tools:layout="@layout/navigation_drawer_fragment" />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
